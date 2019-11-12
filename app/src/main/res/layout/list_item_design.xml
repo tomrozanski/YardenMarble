@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:background="@color/yarden_light"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="4dp"
+    app:cardCornerRadius="4dp">
+
+    <ImageView
+        android:id="@+id/phone_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerInParent="true"
+        android:padding="2dp"
+        android:src="@drawable/ic_phone_black_24dp" />
+
+    <TextView
+        android:id="@+id/name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/phone_image"
+        android:text="@string/customer_s_name"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/colon_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/name_text"
+        android:text="@string/colon"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/status_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/colon_text"
+        android:text="@string/status"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/time_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name_text"
+        android:layout_marginStart="8dp"
+        android:layout_toEndOf="@+id/phone_image"
+        android:text="@string/time_text"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/text_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/time_text"
+        android:layout_marginStart="8dp"
+        android:layout_toEndOf="@+id/phone_image"
+        android:text="@string/address"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/marble_size_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_address"
+        android:layout_marginStart="8dp"
+        android:layout_toEndOf="@+id/phone_image"
+        android:text="@string/marble_size"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:id="@+id/navigate_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        android:padding="2dp"
+        android:src="@drawable/ic_navigation_black_24dp" />
+
+</RelativeLayout>
